@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const port = parseInt(process.env.PORT) || 8080;
+const port = parseInt(process.env.PORT) || 4000;
 const USERS = [
     {
         id: 1,
