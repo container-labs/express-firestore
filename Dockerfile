@@ -18,4 +18,4 @@ RUN yarn install
 COPY . ./
 
 # Run the web service on container startup.
-CMD [ "yarn", "run", "dev" ]
+CMD [ "yarn", "run", "cloudRun" ]
