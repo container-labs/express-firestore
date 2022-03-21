@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const PORT = 5555;
+const port = parseInt(process.env.PORT) || 8080;
 const USERS = [
     {
         id: 1,
@@ -15,8 +15,8 @@ const USERS = [
     }
 ];
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
 });
 
 app.get('/users', (req, res, next) => {
